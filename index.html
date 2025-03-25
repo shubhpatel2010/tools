@@ -261,7 +261,7 @@
             font-size: 0.95rem;
         }
 
-        .tool-card-content a {
+        .tool-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -274,7 +274,7 @@
             transition: var(--transition);
         }
 
-        .tool-card-content a:hover {
+        .tool-link:hover {
             background: var(--primary-dark);
             transform: translateX(5px);
         }
@@ -612,36 +612,33 @@
                 <p>Enhance, convert, compress, and edit your images with our free online tools</p>
             </div>
             <div class="tools-grid">
-                <!-- Tool Card 1 -->
-                <div class="tool-card fade-in delay-1">
+                <!-- Image Compressor Tool Card -->
+                <a href="/image-compressor.html" class="tool-card fade-in delay-1" style="text-decoration: none; color: inherit;">
                     <div class="tool-card-img">
                         <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Image Compressor">
                     </div>
                     <div class="tool-card-content">
-                      <!-- In the Popular Tools section, update the Image Compressor tool card as follows: -->
-<div class="tool-card fade-in delay-1">
-    <a href="/image-compressor.html" style="text-decoration: none; color: inherit;">
-        <div class="tool-card-img">
-            <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Image Compressor">
-        </div>
-        <div class="tool-card-content">
-            <h3>Image Compressor</h3>
-            <p>Reduce image file size without losing quality. Perfect for websites and social media.</p>
-            <div style="display: inline-flex; align-items: center; gap: 8px; padding: 0.5rem 1.2rem; background: var(--primary); color: white; border-radius: 50px; font-weight: 500; transition: var(--transition);">
-                Use Tool <i class="fas fa-arrow-right"></i>
-            </div>
-        </div>
-    </a>
-</div>
-                <!-- Tool Card 2 -->
-              
+                        <h3>Image Compressor</h3>
+                        <p>Reduce image file size without losing quality. Perfect for websites and social media.</p>
+                        <div class="tool-link">
+                            Use Tool <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Image Converter Tool Card -->
+                <div class="tool-card fade-in delay-2">
+                    <div class="tool-card-img">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Image Converter">
+                    </div>
+                    <div class="tool-card-content">
                         <h3>Image Converter</h3>
                         <p>Convert between JPG, PNG, GIF, WebP and more formats with just one click.</p>
-                        <a href="/image-converter">Use Tool <i class="fas fa-arrow-right"></i></a>
+                        <a href="/image-converter" class="tool-link">Use Tool <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <!-- Tool Card 3 -->
+                <!-- Background Remover Tool Card -->
                 <div class="tool-card fade-in delay-3">
                     <div class="tool-card-img">
                         <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Background Remover">
@@ -649,7 +646,7 @@
                     <div class="tool-card-content">
                         <h3>Background Remover</h3>
                         <p>Remove backgrounds from images automatically in seconds with AI technology.</p>
-                        <a href="/background-remover">Use Tool <i class="fas fa-arrow-right"></i></a>
+                        <a href="/background-remover" class="tool-link">Use Tool <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -664,7 +661,7 @@
                 <p>Manipulate PDF documents easily with our collection of free online tools</p>
             </div>
             <div class="tools-grid">
-                <!-- Tool Card 1 -->
+                <!-- PDF Compressor Tool Card -->
                 <div class="tool-card fade-in delay-1">
                     <div class="tool-card-img">
                         <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="PDF Compressor">
@@ -672,11 +669,11 @@
                     <div class="tool-card-content">
                         <h3>PDF Compressor</h3>
                         <p>Reduce PDF file size while maintaining quality. Perfect for email attachments.</p>
-                        <a href="/pdf-compressor">Use Tool <i class="fas fa-arrow-right"></i></a>
+                        <a href="/pdf-compressor" class="tool-link">Use Tool <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <!-- Tool Card 2 -->
+                <!-- PDF to JPG Tool Card -->
                 <div class="tool-card fade-in delay-2">
                     <div class="tool-card-img">
                         <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="PDF to JPG">
@@ -684,11 +681,11 @@
                     <div class="tool-card-content">
                         <h3>PDF to JPG</h3>
                         <p>Convert PDF pages to high-quality JPG images with customizable settings.</p>
-                        <a href="/pdf-to-jpg">Use Tool <i class="fas fa-arrow-right"></i></a>
+                        <a href="/pdf-to-jpg" class="tool-link">Use Tool <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <!-- Tool Card 3 -->
+                <!-- PDF Merger Tool Card -->
                 <div class="tool-card fade-in delay-3">
                     <div class="tool-card-img">
                         <img src="https://images.unsplash.com/photo-1586282391129-76a746f27ea4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="PDF Merger">
@@ -696,7 +693,7 @@
                     <div class="tool-card-content">
                         <h3>PDF Merger</h3>
                         <p>Combine multiple PDF files into a single document in just a few clicks.</p>
-                        <a href="/pdf-merger">Use Tool <i class="fas fa-arrow-right"></i></a>
+                        <a href="/pdf-merger" class="tool-link">Use Tool <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -814,7 +811,7 @@
                 <div class="footer-column">
                     <h3>Tools</h3>
                     <ul>
-                        <li><a href="/image-compressor">Image Compressor</a></li>
+                        <li><a href="/image-compressor.html">Image Compressor</a></li>
                         <li><a href="/image-converter">Image Converter</a></li>
                         <li><a href="/background-remover">Background Remover</a></li>
                         <li><a href="/pdf-compressor">PDF Compressor</a></li>
